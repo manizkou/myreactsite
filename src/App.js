@@ -63,7 +63,11 @@ class Car extends React.Component{
 				{/*we can also bind this in the render as below:*/}
 				{/*<button type="button" onClick={this.changeColor.bind(this)}>Change Color</button>*/}
 
-				<Lifecycle favCol="Yellow" />
+				<Lifecycle  />
+				{ /*
+					sends props named 'favCol' to the Lifecycle.js
+					[related to getDerivedStateFromProps]
+				*/ }
 				
 			</div>
 
