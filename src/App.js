@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import Lifecycle from './Lifecycle.js';
+import Events from './Events.js';
 
 class Car extends React.Component{
 	constructor(props){
@@ -68,6 +69,8 @@ class Car extends React.Component{
 					sends props named 'favCol' to the Lifecycle.js
 					[related to getDerivedStateFromProps]
 				*/ }
+
+				<Events />
 				
 			</div>
 
