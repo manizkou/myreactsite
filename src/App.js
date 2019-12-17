@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import Lifecycle from './Lifecycle.js';
 import Events from './Events.js';
+import Forms from './Forms.js';
+
 
 class Car extends React.Component{
 	constructor(props){
@@ -71,7 +73,9 @@ class Car extends React.Component{
 				*/ }
 
 				<Events />
-				
+
+				<h4>Forms from here on:</h4>
+				<Forms />				
 			</div>
 
 		);

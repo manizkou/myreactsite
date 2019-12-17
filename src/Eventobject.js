@@ -42,10 +42,12 @@ class Eventobject extends React.Component{
 					// Arrow Function: Sending the event object manually:
 				}
 				<button onClick={(ev)=>this.shootStar("Hello Arrow",ev)}>
-					Get Event in Arrow function
+					Get Event in Arrow function 
 				</button>
-				<br/>
-				<br/>
+				<p>
+					The event object is passed through arrow function if 
+					we donot bind 'this' to the event handlers 
+				</p>
 				{
 					// Without arrow function, the React event object is sent 
 					// automatically as the last argument when using the bind() method:
@@ -57,6 +59,12 @@ class Eventobject extends React.Component{
 				<button onClick={this.shootStarNormal.bind(this,"Hello Normally sending")}>
 					Get Event in normal function
 				</button>
+				<p>	
+					When we bind 'this' to the event handler 
+					we don't need to pass event object.
+					the React event object is sent 
+					automatically as the last argument when using the bind() method:
+				</p>
 			
 			</div>
 		);

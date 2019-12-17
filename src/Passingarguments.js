@@ -11,6 +11,9 @@ import Eventobject from './Eventobject';
 // Example:
 // Send "Goal" as a parameter to the shoot function, using arrow function:
 
+// When passing parameter values, use an "anonymous function" 
+// that calls the specified function with the parameters:
+
 class Passingarguments extends React.Component{
 	constructor(props){
 		super(props);
@@ -39,9 +42,9 @@ class Passingarguments extends React.Component{
 					Pass argument without binding with anonymous function  
 				</button>
 				{
-					// Or:
-					// 2. Bind the event handler to this.
-					// Note that the first argument has to be this.
+				// Or:
+				// 2. Bind the event handler to this.
+				// 	  Note that the first argument has to be this.
 				}
 				<br/>
 				<br/>
